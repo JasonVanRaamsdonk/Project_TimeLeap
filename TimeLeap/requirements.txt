@@ -1,0 +1,8 @@
+torch
+scikit-image
+numpy
+matplotlib
+argparse
+Pillow
+IPython
+Django

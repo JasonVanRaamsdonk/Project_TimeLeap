@@ -1,0 +1,133 @@
+
+/* programmatic shorthand atomic css*/
+
+/* whtie */
+.Bgc\(#000000\) { background-color: #FFFFFF; }
+.bgr-white { background-color: #FFFFFF; }
+.clr-white { color: #FFFFFF; }
+
+/* navy */
+.Bgc\(#14213D\) { background-color: #14213D; }
+.bgr-navy { background-color: #14213D; }
+.clr-navy { color: #14213D; }
+
+/* yellow */
+.Bgc\(#FCA311\) { background-color: #FCA311; }
+.bgr-yellow { background-color: #FCA311; }
+.clr-yellow { color: #FCA311; }
+
+/* grey */
+.Bgc\(#E5E5E5\) { background-color: #e9ecef; }
+.bgr-grey { background-color: #e9ecef; }
+.clr-grey { color: #e9ecef; }
+
+/* black */
+.Bgc\(#FFFFFF\) { background-color: #000000; }
+.bgr-black { background-color: #000000; }
+.clr-black { color: #000000; }
+
+/* workaround to make page height 100% */
+
+.py-5 {
+    padding-top: 2.425rem!important;
+    padding-bottom: 2.425rem!important;
+}
+
+.footer_content {
+    padding-left: 0rem;
+}
+
+/* magnify */
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 10rem;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+  max-width: 40rem;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
