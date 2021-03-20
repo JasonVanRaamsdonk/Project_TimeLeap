@@ -3,9 +3,9 @@ import unittest
 import sys # added!
 sys.path.append(".") # added!
 
-from colorizers.base_color import BaseColor
-from colorizers.siggraph17 import SIGGRAPHGenerator
-from colorizers.eccv16 import ECCVGenerator
+from TimeLeap.time_leap.colorization.colorizers.base_color import BaseColor
+from TimeLeap.time_leap.colorization.colorizers.siggraph17 import SIGGRAPHGenerator
+from TimeLeap.time_leap.colorization.colorizers.eccv16 import ECCVGenerator
 
 class TestBaseColor(unittest.TestCase):
 

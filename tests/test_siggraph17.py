@@ -4,8 +4,8 @@ from unittest.mock import patch
 import sys # added!
 sys.path.append(".") # added!
 
-from colorizers.siggraph17 import SIGGRAPHGenerator
-from colorizers.eccv16 import ECCVGenerator
+from TimeLeap.time_leap.colorization.colorizers.siggraph17 import SIGGRAPHGenerator
+from TimeLeap.time_leap.colorization.colorizers.eccv16 import ECCVGenerator
 
 
 class TestSiggraph17(unittest.TestCase):
