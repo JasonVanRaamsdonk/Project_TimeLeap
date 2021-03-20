@@ -5,9 +5,7 @@ setup(
     name='awesomecode',
     version='1.0.0',
     install_requires=[
-        'pytest',
-        'torch',
-        'requests'
+        'pytest'
     ],
     packages=find_packages()
 )
