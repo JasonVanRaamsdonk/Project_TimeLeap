@@ -10,8 +10,4 @@ jobs:
     - name: GitHub Action for pytest
       uses: cclauss/GitHub-Action-for-pytest@master
       with:
-        args: python setup.py develop
-    - name: Run unit tests
-      with:
-        args: pytest
-        env: ./TimeLeap/time_leap/colorization/Tests
+        args: python setup.py develop && ./TimeLeap/time_leap/colorization/Tests/ && pytest
