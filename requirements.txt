@@ -6,3 +6,4 @@ argparse
 Pillow
 IPython
 Django
+pytest
