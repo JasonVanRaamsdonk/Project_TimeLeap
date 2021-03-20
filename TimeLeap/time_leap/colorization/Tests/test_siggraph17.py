@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch
 
 import sys # added!
-sys.path.append("..") # added!
+sys.path.append(".") # added!
 
 from colorizers.siggraph17 import SIGGRAPHGenerator
 from colorizers.eccv16 import ECCVGenerator

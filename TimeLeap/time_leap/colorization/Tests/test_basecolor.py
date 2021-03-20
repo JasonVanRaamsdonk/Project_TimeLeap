@@ -1,7 +1,7 @@
 import unittest
 
 import sys # added!
-sys.path.append("..") # added!
+sys.path.append(".") # added!
 
 from colorizers.base_color import BaseColor
 from colorizers.siggraph17 import SIGGRAPHGenerator
