@@ -1,11 +1,11 @@
 import unittest
 
-import sys # added!
-sys.path.append(".") # added!
+# import sys # added!
+# sys.path.append(".") # added!
 
-from TimeLeap.time_leap.colorization.colorizers.base_color import BaseColor
-from TimeLeap.time_leap.colorization.colorizers.siggraph17 import SIGGRAPHGenerator
-from TimeLeap.time_leap.colorization.colorizers.eccv16 import ECCVGenerator
+from mock_base_color import BaseColor
+from mock_siggraph17 import SIGGRAPHGenerator
+from mock_eccv16 import ECCVGenerator
 
 class TestBaseColor(unittest.TestCase):
 

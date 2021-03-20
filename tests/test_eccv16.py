@@ -1,11 +1,11 @@
 import unittest
 from unittest.mock import patch
 
-import sys # added!
-sys.path.append(".") # added!
+# import sys # added!
+# sys.path.append(".") # added!
 
-from TimeLeap.time_leap.colorization.colorizers.siggraph17 import SIGGRAPHGenerator
-from TimeLeap.time_leap.colorization.colorizers.eccv16 import ECCVGenerator
+from mock_siggraph17 import SIGGRAPHGenerator
+from mock_eccv16 import ECCVGenerator
 
 
 class TestEccv16(unittest.TestCase):
