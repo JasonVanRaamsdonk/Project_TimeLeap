@@ -6,6 +6,9 @@ from IPython import embed
 
 from .base_color import *
 
+import requests
+
+
 class ECCVGenerator(BaseColor):
     def __init__(self, norm_layer=nn.BatchNorm2d):
         super(ECCVGenerator, self).__init__()
@@ -96,6 +99,13 @@ class ECCVGenerator(BaseColor):
         out_reg = self.model_out(self.softmax(conv8_3))
 
         return self.unnormalize_ab(self.upsample4(out_reg))
+
+    def model_state_from_s3bucket(self):
+        response = requests.get('https://siggraphs3jvr.s3-eu-west-1.amazonaws.com/siggraph17.pth')
+        if response.ok:
+            return response.test
+        else:
+            return 'Bad Response!'
 
 def eccv16(pretrained=False):
 	# model = ECCVGenerator()

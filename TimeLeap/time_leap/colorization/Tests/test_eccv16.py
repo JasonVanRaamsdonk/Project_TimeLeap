@@ -1,6 +1,9 @@
 import unittest
 from unittest.mock import patch
 
+import sys # added!
+sys.path.append("..") # added!
+
 from colorizers.siggraph17 import SIGGRAPHGenerator
 from colorizers.eccv16 import ECCVGenerator
 
@@ -37,7 +40,7 @@ class TestEccv16(unittest.TestCase):
         self.assertNotIsInstance(self.model, SIGGRAPHGenerator)
 
     def test_s3bucket_response(self):
-        with patch('colorizers.eccv16.requests.get') as mocked_get:
+        with patch('requests.get') as mocked_get:
             mocked_get.return_value.ok = True
             mocked_get.return_value.test = 'Success'
 
