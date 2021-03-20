@@ -7,7 +7,8 @@ setup(
     install_requires=[
         'pytest',
         'torch',
-        'requests'
+        'requests',
+        'tools'
     ],
     packages=find_packages()
 )
