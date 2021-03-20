@@ -10,4 +10,4 @@ jobs:
     - name: GitHub Action for pytest
       uses: cclauss/GitHub-Action-for-pytest@master
       with:
-        args: python setup.py develop && cd /TimeLeap/time_leap/colorization/tests && pytest
+        args: python setup.py develop && cd /TimeLeap/time_leap/colorization/Tests && pytest
