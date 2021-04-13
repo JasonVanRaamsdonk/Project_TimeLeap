@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from time_leap.models import Topic, Webpage, AccessRecord, Colourise
-from .colorization.demo_timeleap import convert_img
+from .colourisation.demo_timeleap import colourise_image
 
 # Create your views here.
 
@@ -12,7 +12,7 @@ def index(request):
     image_dict = {'image_uploads': image_list, 'flag':False}
     if request.method == "POST":
         img = request.FILES['image_input']
-        img_size = convert_img(img)
+        img_size = colourise_image(img)
         image_dict = {'image_uploads':None, 'img_size':img_size, 'flag':True}
 
     # webpages_list = AccessRecord.objects.order_by('date')
