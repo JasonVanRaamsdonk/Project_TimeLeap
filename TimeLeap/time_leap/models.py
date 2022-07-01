@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Create your models here. - additional comment just to distinguish change
 
 class Colourise(models.Model):
     upload_image = models.ImageField(default="samurai_colour.png", null=True, blank=True)
