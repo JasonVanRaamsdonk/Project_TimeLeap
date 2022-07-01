@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here. - additional comment just to distinguish change
+# Create your models here. - different change to demo unit testing through github action
 
 class Colourise(models.Model):
     upload_image = models.ImageField(default="samurai_colour.png", null=True, blank=True)
